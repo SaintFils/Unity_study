@@ -10,7 +10,7 @@ public class MoveFirst : MonoBehaviour
         _direction.x = Input.GetAxis("Horizontal");
         _direction.z = Input.GetAxis("Vertical");
 
-        transform.position += _direction * Time.deltaTime * -1;
+        transform.position += _direction * Time.deltaTime * _speed * -1;
         
     }
 }
