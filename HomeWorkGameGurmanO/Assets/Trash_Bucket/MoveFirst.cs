@@ -10,7 +10,12 @@ public class MoveFirst : MonoBehaviour
         _direction.x = -Input.GetAxis("Horizontal"); //модель развернута форвардом назад, поэтому -
         _direction.z = -Input.GetAxis("Vertical");
 
+        //transform.position += _direction * Time.deltaTime * _speed;        
+    }
+
+    private void FixedUpdate()
+    {
         transform.position += _direction * Time.deltaTime * _speed;
-        
+
     }
 }
