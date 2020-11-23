@@ -18,6 +18,6 @@ public class MoveFirst : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position += _direction * Time.deltaTime * _speed;
+        transform.position += _direction * Time.fixedDeltaTime * _speed;
     }
 }
