@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+
 public class PlayerAttackMine : MonoBehaviour
 {
     [SerializeField] private GameObject _mine = null;
@@ -10,7 +11,7 @@ public class PlayerAttackMine : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(_mine, _spawnPosition.position, Quaternion.identity);
+            Instantiate(_mine, _spawnPosition.position, Quaternion.Euler(-90,0,0));
         }
     }
 }
