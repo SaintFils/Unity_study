@@ -3,6 +3,7 @@
 
 public class Mine : MonoBehaviour
 {
+    [SerializeField] private int _damage = 2;
     void Start()
     {
         Destroy(gameObject, 4);
@@ -13,7 +14,7 @@ public class Mine : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<EnemyGhost>()?.TakeDamage(2);
+            other.GetComponent<EnemyGhost>()?.TakeDamage(_damage);
             Destroy(gameObject);
         }
     }

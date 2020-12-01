@@ -29,7 +29,7 @@ public class TurretBeh : MonoBehaviour
         {
             if (Vector3.Distance(transform.position, _target.position) < _enemyReaction)
             {
-                transform.LookAt(_target.position);
+                transform.LookAt(_target.position + Vector3.up);
                 _fire();
             }
 
