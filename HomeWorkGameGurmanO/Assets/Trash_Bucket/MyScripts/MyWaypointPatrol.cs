@@ -20,16 +20,17 @@ public class MyWaypointPatrol : MonoBehaviour
 
     void Start()
     {
+
         _navMeshAgent.SetDestination(_waypoints[m_CurrentWaypointIndex].position);
-        _navMeshAgent.speed = Random.Range(0.5f, 2f);
+        _navMeshAgent.speed = Random.Range(1f, 2f);
     }
 
     private void FixedUpdate()
     {
         Color raycastLineColor = Color.red;
 
-        Vector3 startPosition = CalculateOffset(transform.position, 0.5f);
-        Vector3 directionRaycast = CalculateOffset(_player.position, 0.5f) - startPosition;
+        Vector3 startPosition = CalculateOffset(transform.position, 0.7f);
+        Vector3 directionRaycast = CalculateOffset(_player.position, 0.7f) - startPosition;
 
         var raycast = Physics.Raycast(startPosition, directionRaycast, out hit, directionRaycast.magnitude, _mask);
 
@@ -56,9 +57,10 @@ public class MyWaypointPatrol : MonoBehaviour
         _waypoints = wayPoints;
     }
 
-    private Vector3 CalculateOffset(Vector3 position, float offset)
+    private Vector3 CalculateOffset(Vector3 position, float offsetY, float offsetZ = 0f)
     {
-        position.y += offset;
+        position.y += offsetY;
+        position.z += offsetZ;
         return position;
     }
 

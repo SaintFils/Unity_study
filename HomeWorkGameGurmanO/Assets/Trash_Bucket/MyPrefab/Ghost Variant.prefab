@@ -15,7 +15,7 @@ MonoBehaviour:
   _healthPoint: 6
   _respaunPoint: {fileID: 0}
   _respaunCounter: 0
---- !u!114 &8818772090067373461
+--- !u!114 &8250381931949133091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,7 +32,7 @@ MonoBehaviour:
   _player: {fileID: 0}
   _mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1792
 --- !u!1001 &752803022751279324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104,6 +104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547267221297624078, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.039
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1176990128951978394, guid: abeb186619cc7e6419cb81e1e4dfa162, type: 3}

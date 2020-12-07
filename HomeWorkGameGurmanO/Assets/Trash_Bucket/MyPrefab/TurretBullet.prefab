@@ -105,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6680209474302434490}
   - component: {fileID: 4769152920522347201}
+  - component: {fileID: 1382351308871303065}
   m_Layer: 0
   m_Name: TurretBullet
   m_TagString: Untagged
@@ -140,3 +141,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fireSpeed: 4
+--- !u!135 &1382351308871303065
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947201854194141306}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Center: {x: 0, y: 0, z: 0}
