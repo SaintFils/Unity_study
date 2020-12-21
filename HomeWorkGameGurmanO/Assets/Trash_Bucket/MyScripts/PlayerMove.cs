@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
      private void Update()
     {
         _rotation = Input.GetAxis("Horizontal"); 
-       // _direction.x = Input.GetAxis("Horizontal"); 
+        //_direction.x = Input.GetAxis("Horizontal"); 
         _direction.z = Input.GetAxis("Vertical");
        // _direction.Normalize();
     }
