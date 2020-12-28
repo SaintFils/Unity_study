@@ -18,7 +18,7 @@ public class MyWaypointPatrol : MonoBehaviour
         _player = GameObject.FindObjectOfType<PlayerMove>().transform;
     }
 
-    void Start()
+    private void Start()
     {
 
         _navMeshAgent.SetDestination(_waypoints[m_CurrentWaypointIndex].position);
