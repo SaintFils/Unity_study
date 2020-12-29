@@ -20,7 +20,6 @@ public class MyWaypointPatrol : MonoBehaviour
 
     private void Start()
     {
-
         _navMeshAgent.SetDestination(_waypoints[m_CurrentWaypointIndex].position);
         _navMeshAgent.speed = Random.Range(1f, 2f);
     }
